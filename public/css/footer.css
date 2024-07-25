@@ -1,0 +1,391 @@
+/* 
+footer{
+    
+    width: 100%;
+    position: absolute;
+    background: #0d5c7e;
+    color: #fff;
+    padding: 100px, 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.rowss{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.colss{
+    flex-basis: 25%;
+    padding: 10px;
+    p{
+        color: #fff;
+    }
+    h4{
+        color:#fff;
+    }
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.colss h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+footer .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: rgb(94, 89, 81);
+}
+
+footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+footer form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+footer form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+*/
+
+/* footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    margin-right: 15px;
+    cursor: pointer;
+} */
+/* Base style for the social icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some space at the top */
+}
+
+/* Style for each icon */
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Fully rounded */
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white; /* Icon color */
+    background-color: #000; /* Default background color */
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Remove margin for the last icon */
+.social-icons .fa-brands:last-child {
+    margin-right: 0;
+}
+
+/* Hover effects for each icon with different background colors */
+.social-icons .fa-facebook:hover {
+    background-color: #3b5998; /* Facebook blue */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icons .fa-twitter:hover {
+    background-color: #00aced; /* Twitter blue */
+    transform: scale(1.1);
+}
+
+.social-icons .fa-linkedin:hover {
+    background-color: #007bb6; /* LinkedIn blue */
+    transform: scale(1.1);
+}
+
+.social-icons .fa-whatsapp:hover {
+    background-color: #25d366; /* WhatsApp green */
+    transform: scale(1.1);
+}
+
+
+
+
+/*
+.colss h3{
+    color: white;
+}
+footer hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+
+footer .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    overflow: hidden;
+}
+footer .underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width:700px){
+    footer{
+        bottom: unset;
+    }
+} */
+
+
+
+
+/* General Footer Styling */
+footer {
+    width: 100%;
+    position: relative; /* Changed from absolute to relative */
+    background: #0d5c7e;
+    color: #fff;
+    padding: 100px 0 30px; /* Fixed padding syntax */
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* Layout for footer columns */
+.rowss {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Column styling */
+.colss {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.colss h3 {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    color: white; /* Ensure the header text is white */
+}
+
+footer .email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: rgb(94, 89, 81);
+}
+
+footer form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+footer form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+footer .social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Underline animation */
+footer .underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    overflow: hidden;
+}
+
+footer .underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+    .colss {
+        flex-basis: 30%; /* Adjust column width on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .colss {
+        flex-basis: 45%; /* Adjust column width on smaller screens */
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        padding: 50px 0 30px; /* Reduce padding for smaller screens */
+    }
+
+    .rowss {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center columns horizontally */
+        justify-content: center; /* Center columns vertically */
+    }
+
+    .colss {
+        flex-basis: 100%; /* Full width for columns */
+        text-align: center; /* Center-align text in columns */
+        padding: 20px 0; /* Adjust padding */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align items inside columns */
+        justify-content: center; /* Center-align items inside columns */
+    }
+
+    footer form {
+        flex-direction: column; /* Stack form elements vertically */
+        align-items: center; /* Center-align form elements */
+    }
+
+    footer form input {
+        margin: 10px 0; /* Add margin for spacing */
+        width: auto; /* Adjust input width */
+    }
+
+    footer .social-icons {
+        margin: 20px 0; /* Add margin for spacing */
+        display: flex;
+        justify-content: center; /* Center-align social icons */
+        flex-wrap: wrap; /* Allow wrapping for social icons */
+    }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Site Title-->
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="images/logo.png" rel="icon">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <style>
+        .service-details .section {
+            padding: 60px 0;
+        }
+        .service-details .services-list a {
+            display: block;
+            padding: 10px 15px;
+            color: #333;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .service-details .services-list a:hover, .service-details .services-list a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .service-details .services-img {
+            max-width: 100%;
+            height: 450px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .service-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-details ul li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .service-details ul li i {
+            font-size: 20px;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .service-details ul li span {
+            flex: 1;
+        }
+        footer .underline span {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #007bff;
+            margin: 0 auto;
+        }
+        footer .colss {
+            padding: 20px;
+        }
+        footer .colss h3 {
+            margin-bottom: 20px;
+        }
+        footer .social-icons i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #007bff;
+        }
+        #scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #scroll-top:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body class="service-details-page">
+
+<header>
+    <div class="menu-bar">
+        <a href=""><img src="images/logo.png" alt="Logo" class="image-fluid" height="50" width="50"></a>
+        <ul>
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i>About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#services"><i class="fa fa-clone"></i>Services</a>
+            </li>
+            <li><a href="#business-rentals"><i class="fa fa-dollar"></i>Business Rentals</a></li>
+            <li><a href="#blog"><i class="fa fa-edit"></i>Blog</a></li>
+            <li><a href="#contact"><i class="fa fa-phone"></i>Contact</a></li>
+            <a class="button button-default-outline button-nina button-sm" href="#">Travel</a>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+        <div class="container" style="height: 10px;">
+            <nav class="breadcrumbs">
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Sections -->
+    <section id="service-details" class="service-details section">
+        <div class="container">
+            <!-- Air Ticketing Section -->
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="services-list">
+                        <a href="#" class="active">Air Ticketing</a>
+                        <a href="#">Rent Vehicles</a>
+                        <a href="#">Hotel Bookings</a>
+                        <a href="#">Packaged Tours</a>
+                    </div>
+                    <h4>Reliable Air Ticketing Services</h4>
+                    <p>We offer comprehensive air ticketing services to ensure a seamless travel experience for both domestic and international destinations.</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1558204692-5f402fe220b9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Air Ticketing" class="img-fluid services-img">
+                    <h3>Our Air Ticketing Process</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Booking:</strong> Our team helps you find the best flights at competitive prices based on your preferences and schedule.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Confirmation:</strong> Once booked, we confirm your tickets and provide you with all necessary details and documentation.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Support:</strong> We offer 24/7 support to assist with any changes, cancellations, or issues that may arise during your travel.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <!-- Rent Vehicles Section -->
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="services-list">
+                        <a href="#">Air Ticketing</a>
+                        <a href="#" class="active">Rent Vehicles</a>
+                        <a href="#">Hotel Bookings</a>
+                        <a href="#">Packaged Tours</a>
+                    </div>
+                    <h4>Convenient Vehicle Rentals</h4>
+                    <p>We provide a range of rental vehicles to meet your needs, from cars to buses, ensuring you travel comfortably and conveniently.</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1674110997072-41f11b7d4ae7?q=80&w=1562&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Rent Vehicles" class="img-fluid services-img">
+                    <h3>Our Vehicle Rental Services</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Wide Range of Vehicles:</strong> Choose from our extensive fleet of cars, vans, and buses to suit your travel needs.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Flexible Rentals:</strong> We offer flexible rental periods and competitive pricing to ensure you get the best value for your money.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>24/7 Assistance:</strong> Our support team is available around the clock to assist with any issues or questions during your rental period.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <!-- Hotel Bookings Section -->
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="services-list">
+                        <a href="#">Air Ticketing</a>
+                        <a href="#">Rent Vehicles</a>
+                        <a href="#" class="active">Hotel Bookings</a>
+                        <a href="#">Packaged Tours</a>
+                    </div>
+                    <h4>Comfortable Hotel Bookings</h4>
+                    <p>Book your stay with us for a wide range of hotels offering the best in comfort and amenities at various destinations.</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://plus.unsplash.com/premium_photo-1676321688630-9558e7d2be10?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hotel Bookings" class="img-fluid services-img">
+                    <h3>Our Hotel Booking Process</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Selection:</strong> We offer a wide selection of hotels to choose from, ensuring you find the perfect accommodation for your trip.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Booking:</strong> Our team handles all aspects of the booking process, providing you with confirmation and detailed information about your stay.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Support:</strong> We provide 24/7 support to address any issues or questions that may arise during your stay.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <!-- Packaged Tours Section -->
+            <div class="row gy-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="services-list">
+                        <a href="#">Air Ticketing</a>
+                        <a href="#">Rent Vehicles</a>
+                        <a href="#">Hotel Bookings</a>
+                        <a href="#" class="active">Packaged Tours</a>
+                    </div>
+                    <h4>Exciting Packaged Tours</h4>
+                    <p>Explore our diverse range of packaged tours, designed to offer unique experiences and unforgettable memories.</p>
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Packaged Tours" class="img-fluid services-img">
+                    <h3>Our Packaged Tours</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Variety of Tours:</strong> Choose from our extensive range of tours, including adventure, cultural, and leisure trips.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Expert Guides:</strong> Our experienced guides ensure you have a safe, enjoyable, and informative tour experience.</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span><strong>Customizable Packages:</strong> We offer customizable tour packages to meet your specific interests and preferences.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- /Service Details Section -->
+
+</main>
+
+<footer>
+    <div class="rowss">
+        <div class="colss">
+            <img src="images/logo.png" class="logo">
+            <p>
+                Welcome to Wanderlust Travels! We offer rental services for cars and buses, perfect for exploring amazing local destinations. Book your air tickets with us for seamless domestic and international travel. Enjoy a memorable and hassle-free journey with our reliable services!
+            </p>
+        </div>
+        <div class="colss">
+            <h3>Office <div class="underline"><span></span></div>
+            </h3>
+            <p>Balbhadra Road</p>
+            <p>New Baneshwor, Kathmandu</p>
+            <p>Kathmandu, PIN 46400, Nepal</p>
+            <p class="email-id">info@mbsoftech.com</p>
+            <h4>+977-9763200761</h4>
+        </div>
+        <div class="colss">
+            <h3>Special links<div class="underline"><span></span></div>
+            </h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="colss">
+            <h3>Newsletter <div class="underline"><span></span></div>
+            </h3>
+            <form>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required style="border: none;">
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">copyright@ <script>document.write(new Date().getFullYear())</script> World Wide Travel & Tours</p>
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFZ3QX25" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</body>
+
+</html>

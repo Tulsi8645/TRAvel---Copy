@@ -1,0 +1,65 @@
+/* General Styles */
+.about-section {
+  padding: 3rem 0;
+  background-color: #ffffff;
+
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  background-color: #0d5c7e;
+  margin: 1rem auto;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.our-story,
+.our-long-term-goals {
+  text-align: center;
+}
+
+.our-story img,
+.our-long-term-goals img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.image-container {
+  margin-bottom: 1.5rem;
+}
+
+.story {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #555;
+}

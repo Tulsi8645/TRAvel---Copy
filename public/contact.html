@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Messages</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background-color: rgb(74, 238, 197);
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-md-4 {
+      flex: 1;
+      min-width: 300px;
+      margin: 15px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Messages</h1>
+    <div class="row" id="messagesContainer">
+      <!-- Messages will be dynamically loaded here -->
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      function loadMessages() {
+        $.ajax({
+          type: 'GET',
+          url: '/api/get-contacts',
+          success: function (response) {
+            if (response.success) {
+              const messagesContainer = $('#messagesContainer');
+              messagesContainer.empty();
+              response.contacts.forEach(contact => {
+                const card = `
+                  <div class="col-md-4">
+                    <div class="card">
+                      <h5>${contact.name}</h5>
+                      <p><strong>Email:</strong> ${contact.email}</p>
+                      <p><strong>Subject:</strong> ${contact.subject}</p>
+                      <p>${contact.message}</p>
+                    </div>
+                  </div>
+                `;
+                messagesContainer.append(card);
+              });
+            }
+          },
+          error: function (err) {
+            alert('Error fetching messages');
+          },
+        });
+      }
+
+      // Initial load
+      loadMessages();
+    });
+  </script>
+</body>
+</html>

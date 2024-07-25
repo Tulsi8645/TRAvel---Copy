@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Bookings</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    #bookings-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .booking-card {
+      background-color: #76d8db;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      width: calc(33.333% - 40px); /* Adjust width for 3 cards per row */
+      box-sizing: border-box;
+      transition: transform 0.3s;
+    }
+
+    .booking-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .booking-card p {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      .booking-card {
+        width: calc(50% - 40px); /* Adjust width for 2 cards per row on smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .booking-card {
+        width: calc(100% - 40px); /* Adjust width for 1 card per row on very small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>User Bookings</h1>
+  <div id="bookings-container"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        type: 'GET',
+        url: '/api/get-bookings',
+        success: function (response) {
+          if (response.success) {
+            const bookingsContainer = $('#bookings-container');
+            response.bookings.forEach(function (booking) {
+              const bookingCard = `
+                <div class="booking-card">
+                  <p><strong>From:</strong> ${booking.from}</p>
+                  <p><strong>To:</strong> ${booking.to}</p>
+                  <p><strong>Depart Date:</strong> ${booking.departDate}</p>
+                  <p><strong>Duration:</strong> ${booking.duration}</p>
+                  <p><strong>Adults:</strong> ${booking.adults}</p>
+                  <p><strong>Children:</strong> ${booking.children}</p>
+                </div>
+              `;
+              bookingsContainer.append(bookingCard);
+            });
+          }
+        },
+        error: function (err) {
+          alert('Error fetching bookings');
+        },
+      });
+    });
+  </script>
+</body>
+</html>
